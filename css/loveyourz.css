@@ -139,11 +139,6 @@ p {
   /* dashes in the stroke of the SVG image */
   opacity: 10;
   animation:  loveyourz 3s linear;
-
-  /* cubic-bezier(0,0.23,1,1) */
-  /* cubic-bezier are coordinates and ratios, its defined as P0, P1, P2, P3.
-  They are the start and end time of curves. P3 is the final state and time.  */
-
 }
 
 @keyframes loveyourz {
@@ -171,9 +166,10 @@ p {
   }
 }
 
-.down {
-  animation-name: down;
-  animation-delay: 3.2s;
+.animated {
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @keyframes down {
@@ -186,6 +182,11 @@ p {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+.down {
+  animation-name: down;
+  animation-delay: 3.2s;
 }
 
 
