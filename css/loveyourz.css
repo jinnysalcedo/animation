@@ -1,0 +1,204 @@
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a, nav li, nav ul {
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+}
+
+p {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+
+.wrapper {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.album {
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 2.1em;
+  font-weight: lighter;
+}
+
+.forest {
+  position: absolute;
+  top: 26%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 1.4em;
+  animation-delay: 3.4s;
+  color: #fff;
+}
+
+.hills {
+  position: absolute;
+  top: 26%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 1.4em;
+  webkit-text-stroke: 2px black;
+  animation-delay: 3.4s;
+  color: #000
+}
+
+.drive {
+  position: absolute;
+  top: 26%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  color: white;
+  font-size: 1.4em;
+}
+
+/* ID CLASSES FOR VERSE PAGE - VERSE PAGE INCLUDES 3 WORDS */
+/* /////////// VERSE PAGE ////////////////////  */
+/* 2014 LINK TO LANDING PAGE */
+
+/* #home {
+  position: absolute;
+  top: 0%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 3.1em;
+  font-weight: lighter;
+  animation-delay: 3s;
+} */
+
+
+#home {
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  width: 100%;
+  font-size: 6em;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+#forest  {
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+#hills {
+  position: absolute;
+  top: 8%;
+  left: 52%;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+
+}
+
+#drive {
+  position: absolute;
+  top: 8%;
+  left: 65%;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.loveyourz {
+  stroke: #000;
+  fill: #fff;
+  stroke-dasharray: 1850;
+  /* dashes in the stroke of the SVG image */
+  opacity: 10;
+  animation:  loveyourz 3s linear;
+
+  /* cubic-bezier(0,0.23,1,1) */
+  /* cubic-bezier are coordinates and ratios, its defined as P0, P1, P2, P3.
+  They are the start and end time of curves. P3 is the final state and time.  */
+
+}
+
+@keyframes loveyourz {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1850;
+    /* where the stroke begins, animating the path */
+  }
+
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1850;
+  }
+
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgba(255, 255, 255, 5);
+    stroke-dashoffset: 0;
+  }
+}
+
+.down {
+  animation-name: down;
+  animation-delay: 3.2s;
+}
+
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* ///// FLOATING LINKS /////  */
+.floating {
+  display: inline-block;
+  vertical-align: center;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+.floating:hover {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
