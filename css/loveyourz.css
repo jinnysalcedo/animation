@@ -15,6 +15,18 @@ nav a, nav li, nav ul {
   font-weight: lighter;
 }
 
+p {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-top: -15px;
+
+}
+
 /* ///// VERSE #1 ON FOREST PAGE//////  */
 #verse {
   position: absolute;
@@ -151,6 +163,7 @@ nav a, nav li, nav ul {
   font-family: 'Lato', sans-serif;
 }
 
+
 /* ///// BIG LOVE YOURZ ANIMATION LANDING PAGE /////  */
 .loveyourz {
   stroke: #000;
@@ -186,11 +199,51 @@ nav a, nav li, nav ul {
   }
 }
 
+/* ///// NO SUCH THING ANIMATION /////  */
+.bigtext {
+  /* position: absolute; */
+  margin-top: 15%;
+  stroke: #000;
+  fill: #000;
+  stroke-dasharray: 1850;
+  /* dashes in the stroke of the SVG image */
+  opacity: 10;
+  animation:  bigtext 3s ease-in;
+}
+
+@keyframes bigtext {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1850;
+    /* where the stroke begins, animating the path */
+  }
+
+  30% {
+    opacity: 10;
+    fill: rgba(255, 255, 255, 0);
+
+  }
+
+  90% {
+    fill: rgba(235, 235, 235, 3);
+
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgba(255, 255, 255, 5);
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* ////// 2014 ANIMATION HOME PAGE /////  */
+
 .animated {
   animation-fill-mode: both;
 }
 
-/* ////// 2014 ANIMATION HOME PAGE /////  */
 @keyframes down {
   from {
     opacity: 0;
@@ -212,12 +265,12 @@ nav a, nav li, nav ul {
 /* //// BLESSED FROM LEFT ANIMATION //////  */
 @keyframes fromLeft {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translate3d(-100%, 0, 0);
   }
 
   to {
-    opacity: 1;
+    opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
 }
@@ -225,25 +278,29 @@ nav a, nav li, nav ul {
 .fromLeft {
   animation-name: fromLeft;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 14s;
 }
 
-.fromLeft:hover {
+/* .fromLeft:hover {
   animation-play-state: paused;
-}
+} */
 
 
 
 /* ///// ANIMATION FOR FOREST PAGE SUCCESS WORDS ///////  */
 
 @keyframes fromRight {
-  from {
+  0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
 
-  to {
+  50% {
+    opacity: .5;
+  }
+
+  100% {
     opacity: 1;
     transform: translate3d(-100%, 0, 0);
   }
@@ -252,8 +309,8 @@ nav a, nav li, nav ul {
 .fromRight {
   animation-name: fromRight;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-  animation-duration: 13s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 14s;
 }
 
 /* .fromRight:hover {
