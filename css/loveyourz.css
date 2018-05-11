@@ -5,6 +5,8 @@ h1 {
   font-weight: lighter;
 }
 
+
+
 nav a, nav li, nav ul {
   list-style-type: none;
   font-family: 'Lato', sans-serif;
@@ -13,18 +15,27 @@ nav a, nav li, nav ul {
   font-weight: lighter;
 }
 
-p {
+/* ///// VERSE #1 //////  */
+#verse {
   position: absolute;
-  top: 10%;
-  left: 10px;
+  top: 20%;
+  left: 26%;
+  width: 50%;
   font-family: 'Lato', sans-serif;
-  text-align: center;
-  font-size: 3em;
+  /* font-family: 'xtreem_fat_demoregular'; */
+  text-align: left;
+  font-size: 1.5em;
   color: white;
-  width: 100%;
-  text-transform: uppercase;
-  line-height: 100px;
 }
+
+#blessed {
+  position: absolute;
+  top: 40%;
+ font-family: 'xtreem_fat_demoregular';
+ color: white;
+ font-size: 5em;
+}
+
 
 
 .wrapper {
