@@ -15,25 +15,35 @@ nav a, nav li, nav ul {
   font-weight: lighter;
 }
 
-/* ///// VERSE #1 //////  */
+/* ///// VERSE #1 ON FOREST PAGE//////  */
 #verse {
   position: absolute;
   top: 20%;
-  left: 26%;
+  left: 30%;
   width: 50%;
   font-family: 'Lato', sans-serif;
   /* font-family: 'xtreem_fat_demoregular'; */
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
 }
 
-#blessed {
+.blessed {
   position: absolute;
-  top: 40%;
- font-family: 'xtreem_fat_demoregular';
- color: white;
- font-size: 5em;
+  top: 60%;
+  font-family: 'xtreem_fat_demoregular';
+  color: #000;
+  font-size: 10em;
+  width: 100%;
+}
+
+.success {
+  position: absolute;
+  top: -3%;
+  font-family: 'xtreem_fat_demoregular';
+  color: #000;
+  font-size: 10em;
+  width: 100%;
 }
 
 
@@ -177,11 +187,10 @@ nav a, nav li, nav ul {
 }
 
 .animated {
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
+/* ////// 2014 ANIMATION HOME PAGE /////  */
 @keyframes down {
   from {
     opacity: 0;
@@ -196,11 +205,63 @@ nav a, nav li, nav ul {
 
 .down {
   animation-name: down;
+  animation-duration: 1s;
   animation-delay: 3.2s;
 }
 
+/* //// BLESSED FROM LEFT ANIMATION //////  */
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
 
-/* ///// FLOATING LINKS /////  */
+  to {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fromLeft {
+  animation-name: fromLeft;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 15s;
+}
+
+.fromLeft:hover {
+  animation-play-state: paused;
+}
+
+
+
+/* ///// ANIMATION FOR FOREST PAGE SUCCESS WORDS ///////  */
+
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fromRight {
+  animation-name: fromRight;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 13s;
+}
+
+/* .fromRight:hover {
+  animation-play-state: paused;
+} */
+
+
+/* ///// ANIMATED FLOATING LINKS /////  */
 .floating {
   display: inline-block;
   vertical-align: center;
