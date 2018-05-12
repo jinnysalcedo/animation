@@ -22,7 +22,7 @@ p {
   font-size: 2.5em;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: -15px;
 
 }
@@ -30,7 +30,7 @@ p {
 /* ///// VERSE #1 ON FOREST PAGE//////  */
 #verse {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 30%;
   width: 50%;
   font-family: 'Lato', sans-serif;
@@ -40,11 +40,36 @@ p {
   color: white;
 }
 
+/* /////// HILLS VERSE ////  */
+#happiness {
+position: absolute;
+top: 22%;
+left: 33%;
+width: 50%;
+font-family: 'Lato', sans-serif;
+/* font-family: 'xtreem_fat_demoregular'; */
+text-align: left;
+font-size: 1.2em;
+color: white;
+}
+
+/* ////// DRIVE PAGE WORDS /////  */
+  #nosuchthing {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: #fff;
+    font-family: 'xtreem_fat_demoregular';
+    font-size: 5em;
+    font-weight: lighter;
+  }
+
+/* //// FOREST PAGE ANIMATIONS ////  */
 .blessed {
   position: absolute;
   top: 60%;
   font-family: 'xtreem_fat_demoregular';
-  color: #000;
+  color: #fff;
   font-size: 10em;
   width: 100%;
 }
@@ -53,12 +78,33 @@ p {
   position: absolute;
   top: -3%;
   font-family: 'xtreem_fat_demoregular';
-  color: #000;
+  color: #fff;
   font-size: 10em;
   width: 100%;
 }
+/* //// FOREST PAGE ANIMATIONS ENDING ////  */
 
+/* ///// HILLS PAGE ANIMATIONS START /////  */
+.happiness {
+  position: absolute;
+  top: -3%;
+  left: 2%;
+  font-family: 'xtreem_fat_demoregular';
+  color: #fff;
+  font-size: 9em;
+  width: 100%;
+}
 
+.love {
+  position: absolute;
+  /* top: -10%; */
+  left: 66%;
+  font-family: 'xtreem_fat_demoregular';
+  color: #fff;
+  font-size: 8em;
+  width: 100%;
+}
+/* ///// HILLS PAGE ANIMATIONS ENDING /////  */
 
 .wrapper {
   position: absolute;
@@ -126,7 +172,7 @@ p {
   animation-delay: 3s;
 } */
 
-
+/* //// 2014 LINKS TO ALL THREE SUB PAGES ////  */
 #home {
   position: absolute;
   top: 4%;
@@ -317,6 +363,54 @@ p {
   animation-play-state: paused;
 } */
 
+/* ///// END OF ANIMATION FOR FOREST PAGE SUCCESS WORDS ///////  */
+
+
+/* //// hills page ANIMATIONS ////  */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 90%, 0);
+  }
+
+  to {
+    opacity: .5;
+    transform: translate3d(0, 30%, 0);
+
+  }
+}
+
+.fadeUp {
+  animation-name: fadeUp;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3.5s;
+
+}
+
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: .5;
+    transform: translate3d(0, 90%, 0);
+
+  }
+}
+
+.fadeDown {
+  animation-name: fadeDown;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3.5s;
+
+}
+
+
 
 /* ///// ANIMATED FLOATING LINKS /////  */
 .floating {
@@ -328,6 +422,5 @@ p {
   transition-timing-function: ease-in-out;
 }
 .floating:hover {
-  -webkit-transform: translateY(-15px);
   transform: translateY(-15px);
 }
