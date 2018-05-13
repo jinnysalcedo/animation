@@ -370,12 +370,12 @@ color: white;
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 90%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {
-    opacity: .5;
-    transform: translate3d(0, 30%, 0);
+    opacity: .8;
+    transform: translate3d(0, -100%, 0);
 
   }
 }
@@ -392,11 +392,11 @@ color: white;
 @keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   to {
-    opacity: .5;
+    opacity: .9;
     transform: translate3d(0, 90%, 0);
 
   }
