@@ -237,6 +237,7 @@ color: white;
   /* dashes in the stroke of the SVG image */
   opacity: 10;
   animation:  loveyourz 3s linear;
+
 }
 
 @keyframes loveyourz {
@@ -393,7 +394,7 @@ color: white;
   animation-duration: 3.5s;
 }
 
-
+/* //// ANIMATION FOR FADING IN TEXT FOR 3 PAGES /////  */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -407,8 +408,25 @@ color: white;
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 5s;
-  animation-delay: 1.2s;
+  /* animation-delay: 1.2s; */
 }
+
+@keyframes inFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.inFade {
+  animation-name: inFade;
+  animation-duration: 5s;
+  /* animation-delay: 1.2s; */
+}
+
 
 
 /* ///// EXIT PAGE ANIMATIONS /////  */
