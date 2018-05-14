@@ -88,20 +88,20 @@ color: white;
 .happiness {
   position: absolute;
   top: -3%;
-  left: 2%;
+  left: 4%;
   font-family: 'xtreem_fat_demoregular';
   color: #fff;
-  font-size: 9em;
+  font-size: 8em;
   width: 100%;
 }
 
 .love {
   position: absolute;
-  /* top: -10%; */
-  left: 66%;
+  top: 14%;
+  left: 65%;
   font-family: 'xtreem_fat_demoregular';
   color: #fff;
-  font-size: 8em;
+  font-size: 7.1em;
   width: 100%;
 }
 /* ///// HILLS PAGE ANIMATIONS ENDING /////  */
@@ -375,16 +375,17 @@ color: white;
 
   to {
     opacity: .8;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(, 5%, 0);
 
   }
 }
 
 .fadeUp {
   animation-name: fadeUp;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 3.5s;
+  animation-delay: 2s;
 
 }
 
@@ -404,10 +405,25 @@ color: white;
 
 .fadeDown {
   animation-name: fadeDown;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 3.5s;
+}
 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 5s;
 }
 
 
