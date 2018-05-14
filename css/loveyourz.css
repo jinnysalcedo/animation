@@ -54,15 +54,34 @@ color: white;
 }
 
 /* ////// DRIVE PAGE WORDS /////  */
-  #nosuchthing {
+  .nosuchthing {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    color: #fff;
+    top: 12%;
+    left: 28%;
+    color: #a3abb7;
     font-family: 'xtreem_fat_demoregular';
-    font-size: 5em;
+    font-size: 9em;
     font-weight: lighter;
+
   }
+
+  .exitlove {
+    position: absolute;
+    top: 46%;
+    left: 22%;
+    font-family: 'xtreem_fat_demoregular';
+    color: #6f7e96;
+    font-size: 9.5em;
+  }
+
+.exitparagraph {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 1.6em;
+}
 
 /* //// FOREST PAGE ANIMATIONS ////  */
 .blessed {
@@ -245,43 +264,7 @@ color: white;
   }
 }
 
-/* ///// NO SUCH THING ANIMATION /////  */
-.bigtext {
-  /* position: absolute; */
-  margin-top: 15%;
-  stroke: #000;
-  fill: #000;
-  stroke-dasharray: 1850;
-  /* dashes in the stroke of the SVG image */
-  opacity: 10;
-  animation:  bigtext 3s ease-in;
-}
 
-@keyframes bigtext {
-  0% {
-    opacity: 0;
-    fill: none;
-    stroke-dashoffset: 1850;
-    /* where the stroke begins, animating the path */
-  }
-
-  30% {
-    opacity: 10;
-    fill: rgba(255, 255, 255, 0);
-
-  }
-
-  90% {
-    fill: rgba(235, 235, 235, 3);
-
-  }
-
-  100% {
-    opacity: 10;
-    fill: rgba(255, 255, 255, 5);
-    stroke-dashoffset: 0;
-  }
-}
 
 
 /* ////// 2014 ANIMATION HOME PAGE /////  */
@@ -374,7 +357,7 @@ color: white;
   }
 
   to {
-    opacity: .8;
+    opacity: .7;
     transform: translate3d(, 5%, 0);
 
   }
@@ -397,7 +380,7 @@ color: white;
   }
 
   to {
-    opacity: .9;
+    opacity: .7;
     transform: translate3d(0, 90%, 0);
 
   }
@@ -427,6 +410,46 @@ color: white;
 }
 
 
+/* ///// EXIT PAGE ANIMATIONS /////  */
+@keyframes exitLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.exitLeft {
+  animation-name: exitLeft;
+  animation-duration: 9s;
+}
+
+@keyframes exitRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.exitRight {
+  animation-name: exitRight;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+}
 
 /* ///// ANIMATED FLOATING LINKS /////  */
 .floating {
