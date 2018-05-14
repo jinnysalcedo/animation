@@ -407,7 +407,7 @@ color: white;
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 4s;
   /* animation-delay: 1.2s; */
 }
 
